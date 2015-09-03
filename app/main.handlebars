@@ -1,0 +1,25 @@
+
+<div class="content">
+    <div class="panel panel-default">
+        <div class="panel-body">
+            {{text}}
+        </div>
+    </div>
+</div>
+<h1></h1>
+
+<ul class="nav nav-pills">
+
+    {{#articles}}
+        <li role="presentation" class="active">
+            <a href="#{{name}}">{{tab}}</a>
+        </li>
+
+    {{/articles}}
+</ul>
+
+<div>
+	{{#articles}}
+  		{{> article}}
+	{{/articles}}
+</div>
